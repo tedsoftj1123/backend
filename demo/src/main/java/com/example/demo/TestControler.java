@@ -20,7 +20,7 @@ public class TestControler {
     public String login(@RequestBody LoginDto loginDto) {
         User user = userRepository.findByUsername(loginDto.getUsername());
         if(!Objects.equals(user.getPassword(), loginDto.getPassword())){
-            return "login fail";
+            return "login faiefdfl";
         }
         return"login success";
     }
